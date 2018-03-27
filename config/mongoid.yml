@@ -45,3 +45,6 @@ production:
         # See our example for long-running queries in the blog
         # post referenced above.
         timeout: 15
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
