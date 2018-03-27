@@ -1,3 +1,12 @@
+For DataIntegrations team in c9:
+
+Must run 3 terminals in this order:
+1) mongod --smallfiles
+2) redis-server
+3) bundle exec rails server -b 0.0.0.0
+
+
+
 [![Build Status](https://travis-ci.org/phstc/putsreq.svg)](https://travis-ci.org/phstc/putsreq)
 [![Code Climate](https://codeclimate.com/github/phstc/putsreq/badges/gpa.svg)](https://codeclimate.com/github/phstc/putsreq)
 [![Test Coverage](https://codeclimate.com/github/phstc/putsreq/badges/coverage.svg)](https://codeclimate.com/github/phstc/putsreq/coverage)
