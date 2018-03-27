@@ -1,1 +1,1 @@
-web: rails server -p3000
+web: rails server -p8080
