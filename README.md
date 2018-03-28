@@ -1,11 +1,35 @@
 For DataIntegrations team in c9:
 
-Must run 3 terminals in this order:
+Additional dependencies needed before you can run rails server:
+1) npm install yarn -g
+2) yarn
+
+
+Must keep 3 terminals running in this order:
 1) mongod --smallfiles
 2) redis-server
-3) bundle exec rails server -b 0.0.0.0
+3) all of this should be run in the same terminal: 
+  a) export RAILS_ENV=development (some issues setting to production, subject to never change :) )
+  run 
+     rails server
+  b) should be presented with a DEVISE_SECRET_KEY error, kill this command (cntrl c) and copy the DEVISE_SECRET_KEY number it presents into this command:
+      
+      export DEVISE_SECRET_KEY=YOUR_DEVISE_SECRET_KEY
+  c) run
+      
+      rake secret
+  
+  copy output to:
+  
+    export SECRET_TOKEN=YOUR_SECRET
+    
+    
+  d) the above should only have to ever be excuted once per terminal, then you can run the server with:
+  
+      bundle exec rails server -b 0.0.0.0
 
 
+Happy Puts'ing!
 
 [![Build Status](https://travis-ci.org/phstc/putsreq.svg)](https://travis-ci.org/phstc/putsreq)
 [![Code Climate](https://codeclimate.com/github/phstc/putsreq/badges/gpa.svg)](https://codeclimate.com/github/phstc/putsreq)
