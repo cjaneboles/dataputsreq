@@ -8,10 +8,19 @@ yarn
 
 
 Must keep 3 terminals running in this order:
-#### 1) mongod --smallfiles
-#### 2) redis-server
+#### 1) 
+```
+mongod --smallfiles
+```
+###2) 
+```
+redis-server
+```
 #### 3) all of this should be run in the same terminal: 
-  a) export RAILS_ENV=development (some issues setting to production, subject to never change :) )
+  a) 
+  ```
+  export RAILS_ENV=development
+  ```
   run 
      ```
      rails server
