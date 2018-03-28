@@ -12,25 +12,18 @@ Must keep 3 terminals running in this order:
 ```
 mongod --smallfiles
 ```
-###2) 
+### 2) 
 ```
 redis-server
 ```
 #### 3) all of this should be run in the same terminal: 
-  a) 
-  ```
-  export RAILS_ENV=development
-  ```
-  run 
-     ```
-     rails server
-     ```
-  b) should be presented with a DEVISE_SECRET_KEY error, kill this command (cntrl c) and copy the DEVISE_SECRET_KEY number it presents into this command:
+```
+export RAILS_ENV=development
+rails server
+```
+should be presented with a DEVISE_SECRET_KEY error, kill this command (cntrl c) and copy the DEVISE_SECRET_KEY number it presents into this command:
       ```
       export DEVISE_SECRET_KEY=YOUR_DEVISE_SECRET_KEY
-      ```
-  c) run
-      ```
       rake secret
       ```
   
@@ -40,7 +33,7 @@ redis-server
     ```
     
     
-  d) the above should only have to ever be excuted once per terminal, then you can run the server with:
+ the above should only have to ever be excuted once per terminal, then you can run the server with:
      ```
      bundle exec rails server -b 0.0.0.0
      ```
