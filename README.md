@@ -12,7 +12,7 @@ Must keep 3 terminals running in this order:
 ```
 mongod --smallfiles
 ```
-### 2) 
+#### 2) 
 ```
 redis-server
 ```
