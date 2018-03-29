@@ -1,9 +1,7 @@
 development:
   clients:
     default:
-      database: puts_req
-      hosts:
-        - localhost:27017
+      uri: <%= ENV['MONGODB_URI'] %>
 test:
   clients:
     default:
