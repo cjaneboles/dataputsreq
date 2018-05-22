@@ -1,13 +1,13 @@
 ## For DataIntegrations team in c9:
 
-Additional dependencies needed before you can run rails server:
+Additional dependencies needed before you can run rails server on a fresh install:
 ```
 npm install yarn -g
 yarn
 ```
 
 
-Must keep 3 terminals running in this order:
+Must run 3 separate terminals in this order:
 #### 1) 
 ```
 mongod --smallfiles
